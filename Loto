@@ -1,0 +1,7 @@
+x = []
+while len(x) != 6:
+    from random import randint
+    x = [randint(1, 52) for p in range(0, 6)]
+    x = list(dict.fromkeys(x))
+
+print(*x)
